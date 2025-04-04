@@ -6,16 +6,17 @@ export default function Itens() {
     const [itens, setItens] = useState(["Tomate", "Cebola", "Maçã", "Cenoura", "Red Pants", "Blue Pants"]);
 
     return (
-        <div className="items-center justify-items-center min-h-screen p-8 pb-20 gap-4 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-            <h3>2424344</h3>
+        <div>
+            
+            <h2>This is our catalog.</h2>
 
             {itens.map((item, key) => (
                 <p key={key}>{item}</p>
             ))}
             
-            <Link href="/catalog/pants"> Check new pants </Link>
+            <Link className="text-blue-600 hover:underline" href="/catalog/pants"> Check new pants </Link>
 
-            <Link href="/"> Previous </Link>
+            <Link className="text-blue-600 hover:underline" href="/"> Previous </Link>
 
         </div>
     );

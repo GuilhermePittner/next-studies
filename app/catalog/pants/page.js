@@ -3,12 +3,12 @@ import Link from "next/link";
 
 export default function Pants() {
     return (<>
-        <p>Choose a pant. /red or /blue </p>
+        <h2>This is the itens page.</h2>
 
-        <Link href="/catalog/pants/red"> Red </Link>
-        <Link href="/catalog/pants/blue"> Blue </Link>
+        <Link className="text-blue-600 hover:underline" href="/catalog/pants/red"> Red </Link>
+        <Link className="text-blue-600 hover:underline" href="/catalog/pants/blue"> Blue </Link>
 
-        <Link href="/catalog"> Previous </Link>
+        <Link className="text-blue-600 hover:underline" href="/catalog"> Previous </Link>
     </>
     )
 }
