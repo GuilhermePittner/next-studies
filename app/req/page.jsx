@@ -8,6 +8,7 @@ export async function getStaticProps() {
 }
 */}
 
+import Link from "next/link";
 
 export default async function Req() {
     const data = await fetch("https://jsonplaceholder.typicode.com/todos");
@@ -27,7 +28,9 @@ export default async function Req() {
                         key={item.id}
                         className="p-3 border border-gray-200 rounded-md hover:bg-gray-100 transition"
                     >
-                        {item.title}
+                        <Link className="text-blue-600 hover:underline" href={`/req/${item.id}`}>
+                            {item.title}
+                        </Link>
                     </li>
                 ))}
             </ul>
